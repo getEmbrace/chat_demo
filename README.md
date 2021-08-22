@@ -1,4 +1,4 @@
-chat_demo
+chat_demo 
 
 ## Project setup
 ```
