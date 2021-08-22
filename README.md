@@ -1,4 +1,4 @@
-# yujian
+chat_demo
 
 ## Project setup
 ```
