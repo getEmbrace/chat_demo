@@ -19,6 +19,7 @@ function date(){
 Vue.config.productionTip = false
 Vue.prototype.$bus = new Vue()
 Vue.prototype.$date = date
+Vue.prototype.$path = 'https://boygirl.top'
 new Vue({
   router,
   store,

@@ -1,7 +1,7 @@
 <template>
   <div class="c_ShowMessage" v-if="Object.keys(messageInfo).length != 0">
     <div class="left">
-      <img v-if="!isMyMessage" @load="show_load" :src="otherInfo.picture" alt="" />
+      <img v-if="!isMyMessage" @load="show_load" :src="$path + otherInfo.picture" alt="" />
     </div>
     <div class="center" :class="{myCenter: isMyMessage}">
       <div class="m_name">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="right">
-      <img v-if="isMyMessage" @load="show_load"  :src="otherInfo.picture" alt="" />
+      <img v-if="isMyMessage" @load="show_load"  :src="$path + otherInfo.picture" alt="" />
     </div>
   </div>
 </template>

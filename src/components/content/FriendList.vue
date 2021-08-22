@@ -9,7 +9,7 @@
         :messageCount="item.messageCount"
         :class="{clicked: item.id == isClick}"
       >
-        <img slot="img" :src="item.picture" alt="" />
+        <img slot="img" :src="$path + item.picture" alt="" />
         <span slot="name">{{ item.username }}</span>
       </NavBarItem>
     </NavBar>

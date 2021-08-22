@@ -2,7 +2,7 @@
   <div id="mineInfo">
     <div class="mineInfo">
       <div class="mine_img">
-        <img :src="mineInfo.picture" alt="">
+        <img :src="$path + mineInfo.picture" alt="">
       </div>
       <div class="other">
         <div class="name">

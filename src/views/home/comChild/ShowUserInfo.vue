@@ -6,7 +6,7 @@
           <span>&times;</span>
         </div>
         <div class="img">
-          <img :src="userInfo.picture" alt="" />
+          <img :src="$path + userInfo.picture" alt="" />
         </div>
         <div class="name">
           昵称:<span>{{ userInfo.username }}</span>
@@ -26,7 +26,7 @@
         </div>
         <div class="selectedPic">
           <span>精选照片:</span>
-          <img :src="userInfo.selectedPic" alt="" />
+          <img :src="$path + userInfo.selectedPic" alt="" />
         </div>
         <div class="other" v-if="isFriend(userInfo.id)">
           <button @click="del_friend(userInfo.id)">删好友</button>
